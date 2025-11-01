@@ -2,13 +2,12 @@ import YahooFinance from "yahoo-finance2";
  const yahooFinance = new YahooFinance();
 
 async function getStockData() {
-  const symbol = "IOC.NS"; 
+  const symbol = "ICICIBANK.NS"; 
   const result = await yahooFinance.quote(symbol);
 
   console.log({
     symbol: result.symbol,
-    name: result.shortName,
-    currency:result.currency,
+    name: result.shortName, 
     exchange: result.fullExchangeName,
     price: result.regularMarketPrice,
     marketCap: result.marketCap,
@@ -18,3 +17,5 @@ async function getStockData() {
 }
 
 getStockData();
+
+
