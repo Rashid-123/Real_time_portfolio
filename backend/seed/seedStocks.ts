@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import dotenv from 'dotenv';
-import Stock from '../src/models/Stock.js';
+import {Stock} from '../src/models/Stock.js';
 import stockData from '../data/stocks.json' assert {type: 'json'};
 
 dotenv.config();
@@ -10,7 +10,8 @@ const seedStocks = async () => {
         
         await mongoose.connect(process.env.MONGODB_URI!);
         console.log("Connected to MongoDB");
-
+          
+        // Clear all previous stocks data 
         await Stock.deleteMany({});
         console.log("Cleared the existing stocks");
 
