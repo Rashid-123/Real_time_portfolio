@@ -1,0 +1,55 @@
+
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+.next/
+out/
+build/
+
+# TypeScript
+*.tsbuildinfo
+
+
+# Environment variables
+.env
+.env.local
+
+
+# Cache
+.cache/
+.next/cache/
+.vscode/
+.idea/
+
+
+# ------------ Frontend (Next.js specific)
+
+
+# Next.js build output
+.next/
+out/
+
+# Production build folder (if exported)
+frontend/.next/
+frontend/out/
+
+
+# ------------------ Backend (Node.js specific)
+
+
+# Compiled JS output
+backend/dist/
+backend/node_modules/
+
+
+# Local environment configs
+frontend/.env
+backend/.env
+
+# Ignore generated files
+*.log
+*.pid
+*.seed

@@ -1,0 +1,211 @@
+[
+    {
+        "name": "HDFC Bank",
+        "purchasePrice": 1490,
+        "qty": 50,
+        "exchangeCode": "HDFCBANK",
+        "sector": "Financial Services",
+        "userId": null
+    },
+    {
+        "name": "ICICI Bank",
+        "purchasePrice": 820,
+        "qty": 80,
+        "exchangeCode": "ICICIBANK",
+        "sector": "Financial Services",
+        "userId": null
+    },
+    {
+        "name": "Bajaj Finance",
+        "purchasePrice": 6600,
+        "qty": 10,
+        "exchangeCode": "BAJFINANCE",
+        "sector": "Financial Services",
+        "userId": null
+    },
+    {
+        "name": "Axis Bank",
+        "purchasePrice": 970,
+        "qty": 40,
+        "exchangeCode": "AXISBANK",
+        "sector": "Financial Services",
+        "userId": null
+    },
+    {
+        "name": "State Bank of India",
+        "purchasePrice": 620,
+        "qty": 60,
+        "exchangeCode": "SBIN",
+        "sector": "Financial Services",
+        "userId": null
+    },
+    {
+        "name": "HDFC Life Insurance Company",
+        "purchasePrice": 600,
+        "qty": 45,
+        "exchangeCode": "HDFCLIFE",
+        "sector": "Financial Services",
+        "userId": null
+    },
+    {
+        "name": "Infosys",
+        "purchasePrice": 1450,
+        "qty": 20,
+        "exchangeCode": "INFY",
+        "sector": "Information Technology",
+        "userId": null
+    },
+    {
+        "name": "Tata Consultancy Services",
+        "purchasePrice": 3500,
+        "qty": 12,
+        "exchangeCode": "TCS",
+        "sector": "Information Technology",
+        "userId": null
+    },
+    {
+        "name": "Wipro",
+        "purchasePrice": 420,
+        "qty": 40,
+        "exchangeCode": "WIPRO",
+        "sector": "Information Technology",
+        "userId": null
+    },
+    {
+        "name": "Reliance Industries",
+        "purchasePrice": 2450,
+        "qty": 15,
+        "exchangeCode": "RELIANCE",
+        "sector": "Energy & Petrochemicals",
+        "userId": null
+    },
+    {
+        "name": "Oil and Natural Gas Corporation",
+        "purchasePrice": 195,
+        "qty": 100,
+        "exchangeCode": "ONGC",
+        "sector": "Energy & Petrochemicals",
+        "userId": null
+    },
+    {
+        "name": "Coal India",
+        "purchasePrice": 350,
+        "qty": 60,
+        "exchangeCode": "COALINDIA",
+        "sector": "Energy & Petrochemicals",
+        "userId": null
+    },
+    {
+        "name": "GAIL (India) Limited",
+        "purchasePrice": 130,
+        "qty": 120,
+        "exchangeCode": "GAIL",
+        "sector": "Energy & Petrochemicals",
+        "userId": null
+    },
+    {
+        "name": "Bharat Petroleum Corporation Limited",
+        "purchasePrice": 500,
+        "qty": 40,
+        "exchangeCode": "BPCL",
+        "sector": "Energy & Petrochemicals",
+        "userId": null
+    },
+    {
+        "name": "Indian Oil Corporation Limited",
+        "purchasePrice": 105,
+        "qty": 200,
+        "exchangeCode": "IOC",
+        "sector": "Energy & Petrochemicals",
+        "userId": null
+    },
+    {
+        "name": "ITC Limited",
+        "purchasePrice": 440,
+        "qty": 30,
+        "exchangeCode": "ITC",
+        "sector": "FMCG",
+        "userId": null
+    },
+    {
+        "name": "Hindustan Unilever",
+        "purchasePrice": 2450,
+        "qty": 10,
+        "exchangeCode": "HINDUNILVR",
+        "sector": "FMCG",
+        "userId": null
+    },
+    {
+        "name": "Dabur India",
+        "purchasePrice": 560,
+        "qty": 25,
+        "exchangeCode": "DABUR",
+        "sector": "FMCG",
+        "userId": null
+    },
+    {
+        "name": "Maruti Suzuki India",
+        "purchasePrice": 9700,
+        "qty": 8,
+        "exchangeCode": "MARUTI",
+        "sector": "Automobile",
+        "userId": null
+    },
+    {
+        "name": "Tata Motors",
+        "purchasePrice": 780,
+        "qty": 20,
+        "exchangeCode": "TATAMOTORS",
+        "sector": "Automobile",
+        "userId": null
+    },
+    {
+        "name": "Mahindra & Mahindra",
+        "purchasePrice": 1650,
+        "qty": 15,
+        "exchangeCode": "M&M",
+        "sector": "Automobile",
+        "userId": null
+    },
+    {
+        "name": "Bajaj Auto",
+        "purchasePrice": 8900,
+        "qty": 12,
+        "exchangeCode": "BAJAJ-AUTO",
+        "sector": "Automobile",
+        "userId": null
+    },
+    {
+        "name": "Hero MotoCorp",
+        "purchasePrice": 5500,
+        "qty": 18,
+        "exchangeCode": "HEROMOTOCO",
+        "sector": "Automobile",
+        "userId": null
+    },
+    {
+        "name": "Eicher Motors",
+        "purchasePrice": 7000,
+        "qty": 9,
+        "exchangeCode": "EICHERMOT",
+        "sector": "Automobile",
+        "userId": null
+    },
+   
+    {
+        "name": "Larsen & Toubro",
+        "purchasePrice": 3050,
+        "qty": 10,
+        "exchangeCode": "LT",
+        "sector": "Infrastructure & Engineering",
+        "userId": null
+    },
+    {
+        "name": "Adani Ports and SEZ",
+        "purchasePrice": 1100,
+        "qty": 20,
+        "exchangeCode": "ADANIPORTS",
+        "sector": "Infrastructure & Engineering",
+        "userId": null
+    }
+]
