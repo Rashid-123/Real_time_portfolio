@@ -12,20 +12,28 @@ const PORT = process.env.PORT || 5000;
 
 const limiter = rateLimit({
   windowMs: 1 * 60 * 100,
-  max : 15 ,
-  message: {error:'Too many requiests , please try againg later.'},
-  standardHeaders:true,
-  legacyHeaders:false,
+  max: 15,
+  message: { error: 'Too many requiests , please try againg later.' },
+  standardHeaders: true,
+  legacyHeaders: false,
 })
 app.use(limiter);
 
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://portfolio-theta-inky-tbm0md45x0.vercel.app",
+];
 
-app.use(
-  cors({
-    origin: "https://portfolio-theta-inky-tbm0md45x0.vercel.app/" , 
-    credentials: true, 
-  })
-);
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
+}));
 app.use(express.json());
 
 // Connect to database
