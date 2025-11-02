@@ -22,7 +22,7 @@ app.use(limiter);
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000", 
+    origin: process.env.FRONTEND_URL || "https://portfolio-theta-inky-tbm0md45x0.vercel.app/" , 
     credentials: true, 
   })
 );
