@@ -3,7 +3,6 @@ import { getPortfolioData } from '../services/portfolio_service.js';
 
 const router = express.Router();
 
-
 router.get('/', async (req, res) => {
   try {
     const data = await getPortfolioData();

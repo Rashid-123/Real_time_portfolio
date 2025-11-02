@@ -15,8 +15,6 @@ export default function Navbar() {
     <>
       <nav className="sticky top-0 z-50 bg-[var(--color-surface)] border-b border-[var(--color-border)] shadow-sm">
         <div className="xl:px-15 md:px-10 px-4 py-4 flex items-center justify-between">
-         
-
           <Link href="/" className="text-xl font-semibold text-[var(--color-primary)] curson-pointer">
             Portfolio Tracker
           </Link>
@@ -43,14 +41,9 @@ export default function Navbar() {
                 <Sun size={21} className="text-[var(--color-text-primary)]" />
               )}
             </button>
-
           </div>
-
-
         </div>
       </nav>
-
-
 
     </>
   );

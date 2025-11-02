@@ -77,7 +77,7 @@ export const getPortfolioData = async (): Promise<IPortfolioResponse> => {
 
      console.log(marketDataResults);
          
-    // Combining stocks with their market data
+    // Combining stocks with their real time data
     const calculatedStocks: ICalculatedStock[] = [];
 
     stocks.forEach((stock, index) => {

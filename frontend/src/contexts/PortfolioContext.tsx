@@ -1,7 +1,14 @@
+
+
 "use client";
 
-import { createContext, useContext, useEffect, useState, ReactNode } from "react";
-
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  ReactNode,
+} from "react";
 
 export interface Stock {
   _id: string;
@@ -52,16 +59,21 @@ interface PortfolioContextType {
   error: string | null;
 }
 
-const PortfolioContext = createContext<PortfolioContextType | undefined>(undefined);
+const PortfolioContext = createContext<PortfolioContextType | undefined>(
+  undefined
+);
 
 export function PortfolioProvider({ children }: { children: ReactNode }) {
   const [data, setData] = useState<PortfolioData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // --------- Calling the next.js server route
+  const API_ROUTE = "/api/portfolio";
+
   async function fetchData() {
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/portfolio`);
+      const res = await fetch(API_ROUTE);
       if (!res.ok) throw new Error("Failed to fetch portfolio data");
       const newData: PortfolioData = await res.json();
       setData(newData);
@@ -75,8 +87,7 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     fetchData();
-    // here data is auto-refresh after 15 sec
-    const interval = setInterval(fetchData, 15000); 
+    const interval = setInterval(fetchData, 15000);
     return () => clearInterval(interval);
   }, []);
 
