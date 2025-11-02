@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import { connectDB } from './config/db.js';
+import rateLimit from 'express-rate-limit';
 import portfolioRoutes from './routes/portfolio_routes.js';
 
 dotenv.config();
@@ -9,8 +10,22 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+const limiter = rateLimit({
+  windowMs: 1 * 60 * 100,
+  max : 15 ,
+  message: {error:'Too many requiests , please try againg later.'},
+  standardHeaders:true,
+  legacyHeaders:false,
+})
+app.use(limiter);
 
-app.use(cors());
+
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL || "http://localhost:3000", 
+    credentials: true, 
+  })
+);
 app.use(express.json());
 
 // Connect to database

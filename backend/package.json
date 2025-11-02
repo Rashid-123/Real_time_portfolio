@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon --exec tsx src/server.ts",
-    "seed":"tsx seed/seedStocks.ts",
+    "seed": "tsx seed/seedStocks.ts",
     "build": "tsc",
     "start": "node dist/server.js"
   },
@@ -33,6 +33,7 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
     "mongoose": "^8.19.2",
     "node-fetch": "^3.3.2",
     "yahoo-finance2": "^3.10.0"
